@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Муравьев Александр Олегович</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="name_activity">Страница с именем</string>
+    <string name="name">Муравьев Александр Олегович</string>
+    <string name="gallery">Галерея</string>
+    <string name="text_input">Ввести…</string>
+    <string name="fish">Рыбовое</string>
+    <string name="add">Сохранить</string>
+</resources>
