@@ -7,17 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".InputActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/userInput"
         android:layout_width="271dp"
@@ -44,16 +33,17 @@
 
     <TextView
         android:id="@+id/textViewList"
-        android:layout_width="371dp"
-        android:layout_height="205dp"
+        android:layout_width="342dp"
+        android:layout_height="538dp"
         android:padding="8dp"
         android:scrollbars="vertical"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userInput"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.212" />
 
     <Button
         android:id="@+id/button7"
@@ -63,7 +53,8 @@
         android:text="@string/main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.845" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewList"
+        app:layout_constraintVertical_bias="0.903" />
 </androidx.constraintlayout.widget.ConstraintLayout>
