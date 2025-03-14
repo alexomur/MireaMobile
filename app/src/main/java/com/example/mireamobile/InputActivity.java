@@ -3,9 +3,7 @@ package com.example.mireamobile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,14 +11,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class InputActivity extends AppCompatActivity {
 
-    private EditText userInput;
-    private TextView textViewList;
-    private List<String> inputHistory;
+    private EditText fioInput;
+    private EditText groupInput;
+    private EditText ageInput;
+    private EditText markInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,27 +30,19 @@ public class InputActivity extends AppCompatActivity {
             return insets;
         });
 
-        inputHistory = new ArrayList<>();
-
-        textViewList = findViewById(R.id.textViewList);
-        userInput = findViewById(R.id.userInput);
+        fioInput = findViewById(R.id.FIO);
+        groupInput = findViewById(R.id.group);
+        ageInput = findViewById(R.id.age);
+        markInput = findViewById(R.id.mark);
     }
 
     public void save(View v) {
-        String text = userInput.getText().toString().trim();
-
-        if (!text.isEmpty()) {
-            inputHistory.add(text);
-
-            StringBuilder sb = new StringBuilder();
-            for (String s : inputHistory) {
-                sb.append(s).append("\n");
-            }
-
-            textViewList.setText(sb.toString());
-
-            userInput.setText("");
-        }
+        Intent intent = new Intent(this, NextActivity.class);
+        intent.putExtra("FIO", fioInput.getText().toString());
+        intent.putExtra("group", groupInput.getText().toString());
+        intent.putExtra("age", Integer.parseInt(ageInput.getText().toString()));
+        intent.putExtra("mark", Integer.parseInt(markInput.getText().toString()));
+        startActivity(intent);
     }
 
     public void openMainMenu(View v) {

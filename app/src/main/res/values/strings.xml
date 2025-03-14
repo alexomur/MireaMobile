@@ -3,7 +3,12 @@
     <string name="main_menu">Главное меню</string>
     <string name="name_activity">Страница с именем</string>
     <string name="gallery">Галерея</string>
-    <string name="text_input">Ввести…</string>
     <string name="fish">Рыбовое</string>
     <string name="add">Сохранить</string>
+    <string name="text_input">Ввести…</string>
+    <string name="FIO">ФИО</string>
+    <string name="group">Номер группы</string>
+    <string name="age">Возраст</string>
+    <string name="mark">Оценка</string>
+    <string name="user_info">ФИО: %1$s\nГруппа: %2$s\nВозраст: %3$d\nНужная оценка: %4$d</string>
 </resources>

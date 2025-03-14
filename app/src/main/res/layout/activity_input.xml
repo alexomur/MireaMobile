@@ -13,21 +13,12 @@
         android:layout_height="82dp"
         android:onClick="save"
         android:text="@string/add"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="33dp" />
-
-    <TextView
-        android:id="@+id/textViewList"
-        android:layout_width="342dp"
-        android:layout_height="538dp"
-        android:padding="8dp"
-        android:scrollbars="vertical"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userInput" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
 
     <Button
         android:id="@+id/button7"
@@ -38,22 +29,61 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewList"
-        app:layout_constraintVertical_bias="0.903" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/userInput"
-        android:layout_width="274dp"
-        android:layout_height="81dp"
+        android:id="@+id/FIO"
+        android:layout_width="397dp"
+        android:layout_height="55dp"
         android:ems="10"
-        android:hint="@string/text_input"
+        android:hint="@string/FIO"
         android:importantForAutofill="no"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/group"
+        android:layout_width="397dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/group"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/FIO"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="397dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/mark"
+        android:layout_width="397dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/mark"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintVertical_bias="0.101" />
 </androidx.constraintlayout.widget.ConstraintLayout>
