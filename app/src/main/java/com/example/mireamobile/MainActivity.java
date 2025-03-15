@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         Log.i(MAIN_TAG, "onCreate() - Активность создана");
     }
 
+    public void onNextActivity(View v)
+    {
+
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
