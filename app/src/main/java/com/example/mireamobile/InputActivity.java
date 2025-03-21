@@ -2,6 +2,7 @@ package com.example.mireamobile;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -37,11 +38,15 @@ public class InputActivity extends AppCompatActivity {
     }
 
     public void save(View v) {
+        String fio = fioInput.getText().toString();
+        String group = groupInput.getText().toString();
+        String age = ageInput.getText().toString();
+        String mark = markInput.getText().toString();
+
+        StudentData data = new StudentData(fio, group, age, mark);
+
         Intent intent = new Intent(this, NextActivity.class);
-        intent.putExtra("FIO", fioInput.getText().toString());
-        intent.putExtra("group", groupInput.getText().toString());
-        intent.putExtra("age", Integer.parseInt(ageInput.getText().toString()));
-        intent.putExtra("mark", Integer.parseInt(markInput.getText().toString()));
+        intent.putExtra("data", data);
         startActivity(intent);
     }
 

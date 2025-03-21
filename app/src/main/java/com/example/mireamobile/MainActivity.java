@@ -13,7 +13,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String MAIN_TAG = "Активность Main";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,43 +24,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        Log.i(MAIN_TAG, "onCreate() - Активность создана");
-    }
-
-    public void onNextActivity(View v)
-    {
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i(MAIN_TAG, "onStart() - Активность становится видимой");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(MAIN_TAG, "onResume() - Активность на переднем плане, с ней можно взаимодействовать");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.i(MAIN_TAG, "onPause() - Активность теряет фокус, но еще видна (возможно, поверх открыто другое окно)");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.i(MAIN_TAG, "onStop() - Активность больше не видна (может быть уничтожена)");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(MAIN_TAG, "onDestroy() - Активность уничтожается");
     }
 
     public void openNameActivity(View v) {

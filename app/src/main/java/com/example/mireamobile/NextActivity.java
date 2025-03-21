@@ -2,6 +2,7 @@ package com.example.mireamobile;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,24 +24,26 @@ public class NextActivity extends AppCompatActivity {
             return insets;
         });
 
-        TextView messageText = new TextView(this);
-        messageText.setTextSize(26);
-        messageText.setPadding(16, 16, 16, 16);
+        TextView messageText = findViewById(R.id.outputWindow);
 
-        Bundle args = getIntent().getExtras();
-        if (args == null)
+        StudentData data = (StudentData) getIntent().getSerializableExtra("data");
+
+        if (data == null)
         {
-            Log.e("NextActivity", "args is null");
+            Log.e("NextActivity", "data is null");
             return;
         }
 
-        String fio = args.getString("FIO");
-        String group = args.getString("group");
-        int age = args.getInt("age");
-        int mark = args.getInt("mark");
+        String fio = data.getName();
+        String group = data.getGroup();
+        String age = data.getAge();
+        String mark = data.getMark();
 
         messageText.setText(getString(R.string.user_info, fio, group, age, mark));
+    }
 
-        setContentView(messageText);
+    public void back(View view)
+    {
+        finish();
     }
 }

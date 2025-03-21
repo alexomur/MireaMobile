@@ -10,6 +10,11 @@
     <string name="group">Номер группы</string>
     <string name="age">Возраст</string>
     <string name="mark">Оценка</string>
-    <string name="user_info">ФИО: %1$s\nГруппа: %2$s\nВозраст: %3$d\nНужная оценка: %4$d</string>
+    <string name="user_info">ФИО: %1$s\nГруппа: %2$s\nВозраст: %3$s\nНужная оценка: %4$s</string>
     <string name="LinearLayout">LinearLayout</string>
+    <string name="RelativeLayout">RelativeLayout</string>
+    <string name="FrameLayout">FrameLayout</string>
+    <string name="back">Назад</string>
+    <string name="hello">Hello!</string>
+    <string name="goodbye">Goodbye!</string>
 </resources>

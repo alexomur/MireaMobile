@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size">128dp</dimen>
+    <dimen name="hello_size">64sp</dimen>
+    <dimen name="goodbye_size">48sp</dimen>
+</resources>
