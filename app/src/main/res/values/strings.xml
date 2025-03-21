@@ -11,4 +11,5 @@
     <string name="age">Возраст</string>
     <string name="mark">Оценка</string>
     <string name="user_info">ФИО: %1$s\nГруппа: %2$s\nВозраст: %3$d\nНужная оценка: %4$d</string>
+    <string name="LinearLayout">LinearLayout</string>
 </resources>
