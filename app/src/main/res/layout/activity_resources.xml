@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hello"
         android:textSize="@dimen/hello_size"
+        android:textColor="@color/blue"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
