@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MireaMobile4</string>
+    <string name="word_firstname">Имя</string>
+    <string name="word_lastname">Фамилия</string>
+    <string name="word_subject">Предмет</string>
+
+    <string name="word_date">Дата</string>
+    <string name="word_time">Время</string>
+
+    <string name="word_next">Далее</string>
+</resources>

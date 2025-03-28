@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/text_firstname"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/word_firstname"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_lastname"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/word_lastname"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_firstname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstname" />
+
+    <EditText
+        android:id="@+id/input_subject"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:hint="@string/word_subject"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/text_lastname"
+        app:layout_constraintStart_toStartOf="@+id/text_lastname"
+        app:layout_constraintTop_toBottomOf="@+id/text_lastname"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/button_next_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/word_next"
+        android:onClick="next"
+        app:layout_constraintEnd_toEndOf="@+id/input_subject"
+        app:layout_constraintStart_toStartOf="@+id/input_subject"
+        app:layout_constraintTop_toBottomOf="@+id/input_subject" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="516dp"
+        android:text="@string/word_date"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/word_time"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_date"
+        app:layout_constraintTop_toBottomOf="@+id/text_date" />
+</androidx.constraintlayout.widget.ConstraintLayout>
