@@ -6,6 +6,7 @@
 
     <string name="word_date">Дата</string>
     <string name="word_time">Время</string>
+    <string name="word_comment">Комментарий</string>
 
     <string name="word_next">Далее</string>
 </resources>

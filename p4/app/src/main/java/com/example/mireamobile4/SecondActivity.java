@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.activity.result.ActivityResultLauncher;
@@ -17,26 +18,46 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private TextView dateView;
-    private TextView timeView;
+    private EditText subjectEditText;
+    private TextView subjectText;
 
     private final ActivityResultLauncher<Intent> thirdActivityLauncher =
             registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
-                Intent data = result.getData();
+                Intent info = result.getData();
 
-                if (result.getResultCode() != RESULT_OK || data == null)
+                if (result.getResultCode() != RESULT_OK || info == null)
                 {
                     Log.e("SecondActivity", "result code (" + result.getResultCode() +
-                            ") is not OK or result data is null (" + (result.getData() == null) + "!");
+                            ") is not OK or result info is null (" + (info == null) + ")!");
                     return;
                 }
 
-                String date = data.getStringExtra("date");
-                String time = data.getStringExtra("time");
+                String subjectInfo = info.getStringExtra("result");
 
-                dateView.setText(date);
-                timeView.setText(time);
+                if (subjectInfo == null)
+                {
+                    Log.e("SecondActivity", "No extra for subjectInfo was found");
+                    return;
+                }
+
+                Log.d("SecondActivity", subjectInfo);
+
+                Toast.makeText(this, "Время занятия передано успешно", Toast.LENGTH_LONG).show();
+
+                String subject = subjectEditText.getText().toString();
+
+                String finalInfo = subject + ": " + subjectInfo;
+
+                Log.d("SecondActivity", finalInfo);
+
+                subjectText.setText(finalInfo);
             });
+
+    public void next(View view)
+    {
+        Intent intent = new Intent(this, ThirdActivity.class);
+        thirdActivityLauncher.launch(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,13 +83,11 @@ public class SecondActivity extends AppCompatActivity {
         ((TextView)(findViewById(R.id.text_firstname))).setText(firstname);
         ((TextView)(findViewById(R.id.text_lastname))).setText(lastname);
 
-        dateView = findViewById(R.id.text_date);
-        timeView = findViewById(R.id.text_time);
-    }
-
-    public void next(View view)
-    {
-        Intent intent = new Intent(this, ThirdActivity.class);
-        thirdActivityLauncher.launch(intent);
+        subjectEditText = findViewById(R.id.input_subject);
+        subjectText = findViewById(R.id.text_subject);
     }
 }
+
+
+
+

@@ -33,16 +33,29 @@
         app:layout_constraintStart_toStartOf="@+id/text_firstname"
         app:layout_constraintTop_toBottomOf="@+id/text_firstname" />
 
+    <TextView
+        android:id="@+id/text_subject"
+        android:layout_width="332dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="92dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_firstname"
+        app:layout_constraintStart_toStartOf="@+id/text_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstname" />
+
     <EditText
         android:id="@+id/input_subject"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:autofillHints=""
         android:hint="@string/word_subject"
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/text_lastname"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/text_lastname"
         app:layout_constraintTop_toBottomOf="@+id/text_lastname"
         tools:ignore="LabelFor" />
@@ -58,29 +71,4 @@
         app:layout_constraintStart_toStartOf="@+id/input_subject"
         app:layout_constraintTop_toBottomOf="@+id/input_subject" />
 
-    <TextView
-        android:id="@+id/text_date"
-        android:layout_width="300dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="516dp"
-        android:text="@string/word_date"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_time"
-        android:layout_width="300dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/word_time"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_date"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_date"
-        app:layout_constraintTop_toBottomOf="@+id/text_date" />
 </androidx.constraintlayout.widget.ConstraintLayout>

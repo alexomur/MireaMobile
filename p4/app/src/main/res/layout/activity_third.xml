@@ -7,4 +7,53 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
+    <EditText
+        android:id="@+id/input_date"
+        android:layout_width="274dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/word_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_time"
+        android:layout_width="274dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="@string/word_time"
+        app:layout_constraintEnd_toEndOf="@+id/input_date"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/input_date"
+        app:layout_constraintTop_toBottomOf="@+id/input_date" />
+
+    <EditText
+        android:id="@+id/input_comment"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/word_comment"
+        app:layout_constraintEnd_toEndOf="@+id/input_time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_time"
+        app:layout_constraintTop_toBottomOf="@+id/input_time" />
+
+    <Button
+        android:id="@+id/button_next_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/word_next"
+        android:onClick="next"
+        app:layout_constraintEnd_toEndOf="@+id/input_comment"
+        app:layout_constraintStart_toStartOf="@+id/input_comment"
+        app:layout_constraintTop_toBottomOf="@+id/input_comment" />
 </androidx.constraintlayout.widget.ConstraintLayout>
