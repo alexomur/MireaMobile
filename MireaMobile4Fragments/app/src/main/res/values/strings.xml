@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MireaMobile4Fragments</string>
+
+    <string name="text_first_fragment">First Fragment</string>
+    <string name="button_first_fragment">First Fragment Button</string>
+
+    <string name="text_second_fragment">Second Fragment</string>
+    <string name="check_second_fragment">Second Fragment Checkbox</string>
+
+    <string name="text_third_fragment">Third Fragment</string>
+    <string name="switch_third_fragment">Second Fragment Checkbox</string>
+
+</resources>
