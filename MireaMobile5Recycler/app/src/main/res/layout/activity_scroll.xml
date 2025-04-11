@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент 1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент 2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент 3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент 4" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Элемент N" />
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите что-нибудь"
+            android:layout_marginTop="24dp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
