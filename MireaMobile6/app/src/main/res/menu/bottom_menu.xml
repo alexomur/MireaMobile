@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_black_holes"
+        android:icon="@drawable/ic_action_black_holes"
+        android:title="@string/black_holes" />
+
+    <item
+        android:id="@+id/nav_cats_cradle"
+        android:icon="@drawable/ic_action_cats_cradle"
+        android:title="@string/cats_cradle" />
+
+    <item
+        android:id="@+id/nav_invent_everything"
+        android:icon="@drawable/ic_action_invent_everything"
+        android:title="@string/how_to_invent_everything" />
+
+</menu>

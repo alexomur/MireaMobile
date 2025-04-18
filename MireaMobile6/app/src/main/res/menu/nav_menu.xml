@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/nav_metro_2033"
+      android:title="@string/metro_2033" />
+    <item
+        android:id="@+id/nav_metro_2034"
+        android:title="@string/metro_2034" />
+    <item
+        android:id="@+id/nav_metro_2035"
+        android:title="@string/metro_2035" />
+    <item
+        android:id="@+id/nav_second"
+        android:title="@string/to_second" />
+</menu>

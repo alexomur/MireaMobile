@@ -8,9 +8,9 @@
     <string name="metro_2034">Метро 2034</string>
     <string name="metro_2035">Метро 2035</string>
 
+    <string name="to_second">К SecondActivity</string>
+
     <string name="black_holes">Черные дыры. Ключ к пониманию Вселенной</string>
     <string name="cats_cradle">Колыбель для кошки</string>
     <string name="how_to_invent_everything">Как изобрести всё</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
